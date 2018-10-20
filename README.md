@@ -37,3 +37,7 @@ yarn start
 This will start the normal create-react-app dev server and open your app at `http://localhost:3000`.
 
 Local in-app requests to the relative path `/.netlify/functions/*` will automatically be proxied to the local functions dev server.
+
+# Additional Resources
+
+[Create React App Auth0 Reach Router](https://github.com/vpicone/Create-React-App-Auth0-Reach-Router)
