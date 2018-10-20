@@ -4,13 +4,14 @@ import Callback from './Callback';
 import Home from './pages/Home';
 import LandingPage from './pages/LandingPage';
 
-import { isAuthenticated } from '../services/auth';
+// import { isAuthenticated } from '../services/auth';
 
 export default class App extends Component {
   render() {
     return (
       <Router>
-        {isAuthenticated() ? <Home path="/" /> : <LandingPage path="/" />}
+        <LandingPage path="/" />
+        <Home path="dashboard" />
         <Callback path="callback" />
       </Router>
     );

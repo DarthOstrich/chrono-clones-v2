@@ -40,12 +40,13 @@ export const logout = () => {
 
 export const handleAuthentication = () => {
   auth0.parseHash((err, authResult) => {
+    debugger;
     if (authResult && authResult.idToken) {
       setSession(authResult);
     } else if (err) {
       console.error(err);
     }
-    navigate('/');
+    navigate('/dashboard');
   });
 };
 
